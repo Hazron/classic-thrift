@@ -72,9 +72,12 @@ Route::middleware(['guest'])->group(function () {
 
 Route::middleware(['auth'])->group(function () {
     Route::post('/logout', [SessionController::class, 'destroy'])->name('logout');
+
     Route::get('/my-account', function () {
         return view('my-account');
     })->name('my-account');
+    Route::put('/profile/{id}', [DashboardController::class, 'update'])->name('profile.update');
+
 
     Route::get('/dashboard', [DashboardController::class, 'view'])->name('view');
 

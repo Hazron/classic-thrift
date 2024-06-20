@@ -62,6 +62,6 @@ class WishlistController extends Controller
     {
         $wishlists = Wishlist::where('user_id', Auth::id())->get();
 
-        return view('wishlist', compact('wishlists', 'navbar'));
+        return view('wishlist', compact('wishlists'));
     }
 }

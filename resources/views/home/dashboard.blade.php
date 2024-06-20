@@ -176,34 +176,29 @@
                         <h3>Account details </h3>
                         <div class="login">
                             <div class="login_form_container">
+                                @if (session('success'))
+                                    <div class="alert alert-success">
+                                        {{ session('success') }}
+                                    </div>
+                                @endif
                                 <div class="account_login_form">
-                                    <form action="#">
+                                    <form action="/profile/{{Auth::user()->id}}" method="POST">
+                                        @csrf
+                                        @method('PUT')
 
-                                        <div class="input-radio">
-                                            <span class="custom-radio"><input type="radio" value="1" name="id_gender">
-                                                Mr.</span>
-                                            <span class="custom-radio"><input type="radio" value="1" name="id_gender">
-                                                Mrs.</span>
-                                        </div> <br>
                                         <div class="default-form-box mb-20">
-                                            <label>First Name</label>
-                                            <input type="text" name="first-name">
+                                            <label>Full Name</label>
+                                            <input type="text" name="name" value="{{Auth::user()->name}}">
                                         </div>
-                                        <div class="default-form-box mb-20">
-                                            <label>Last Name</label>
-                                            <input type="text" name="last-name">
-                                        </div>
+
                                         <div class="default-form-box mb-20">
                                             <label>Email</label>
-                                            <input type="text" name="email-name">
+                                            <input type="text" name="email" value="{{Auth::user()->email}}">
                                         </div>
+
                                         <div class="default-form-box mb-20">
-                                            <label>Password</label>
-                                            <input type="password" name="user-password">
-                                        </div>
-                                        <div class="default-form-box mb-20">
-                                            <label>Birthdate</label>
-                                            <input type="date" name="birthday">
+                                            <label>Alamat</label>
+                                            <input type="text" name="alamat" value="{{Auth::user()->alamat}}">
                                         </div>
 
                                         <div class="save_button mt-3">

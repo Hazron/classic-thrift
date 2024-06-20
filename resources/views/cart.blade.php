@@ -55,16 +55,11 @@
                                                 </form>
                                             </td>
                                             <td class="product_thumb"><a href="/product-details-default"><img
-                                                        src="{{ asset('storage/images/products/' . $keranjang->produk->foto) }}"
-                                                        alt=""></a></td>
-                                            <td class="product_name"><a
-                                                    href="/product-details-default">{{ $keranjang->produk->nama_produk }}</a>
+                                                        src="{{ asset($keranjang->produk->foto) }}" alt=""></a></td>
+                                            <td class="product_name"><a href="#">{{ $keranjang->produk->nama_produk }}</a>
                                             </td>
                                             <td class="product_price">
                                                 Rp. {{ number_format($keranjang->produk->harga, 0, ',', '.') }}
-                                            </td>
-                                            <td class="product_total">
-                                                Rp. {{ number_format($keranjang->total_harga, 0, ',', '.') }}
                                             </td>
 
                                         </tr>
@@ -93,7 +88,7 @@
                             <h3>Cart Totals</h3>
                             <div class="coupon_inner">
                                 <div class="cart_subtotal">
-                                    <p>Subtotal: Rp. {{ number_format($subtotal, 0, ',', '.') }}</p>
+                                    <p class="cart_amount">Subtotal: Rp.<span id="subtotalValue"></span></p>
                                 </div>
                                 <div class="cart_subtotal ">
                                     <p>Shipping</p>
@@ -116,5 +111,20 @@
         </div> <!-- End Coupon Start -->
     </div> <!-- ...:::: End Cart Section:::... -->
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let totalHarga = 0;
 
+            // Menghitung total harga dari keranjang
+            @foreach ($keranjangs as $keranjang)
+                totalHarga += {{ $keranjang->produk->harga }};
+            @endforeach
+
+            // Menampilkan total harga ke dalam console.log
+            console.log('Total Harga Keranjang: Rp. ' + totalHarga.toLocaleString());
+
+            // Menampilkan total harga ke dalam elemen HTML
+            document.getElementById('subtotalValue').textContent = totalHarga.toLocaleString();
+        });
+    </script>
     @include('home.layout.footer')

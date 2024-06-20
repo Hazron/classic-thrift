@@ -71,7 +71,7 @@
                                     <a href="#" class="offcanvas-cart-item-link">{{ $item->produk->nama_produk }}</a>
                                     <div class="offcanvas-cart-item-details">
                                         <span class="offcanvas-cart-item-details-price">
-                                            Rp. {{ number_format($item->produk->harga, 2, ',', '.') }}</span>
+                                            Rp. </span>
                                     </div>
                                 </div>
                         </li>
@@ -81,9 +81,7 @@
         </ul>
         <div class="offcanvas-cart-total-price">
             <span class="offcanvas-cart-total-price-text">Subtotal:</span>
-            <span class="offcanvas-cart-total-price-value">Rp.
-                {{ number_format($keranjangItems->sum(function ($item) {
-    return $item->produk->harga * $item->qty; }), 2, ',', '.') }}</span>
+            <span class="offcanvas-cart-total-price-value">Rp. </span>
         </div>
         <ul class="offcanvas-cart-action-button">
             <li><a href="/cart" class="btn btn-block btn-golden">View Cart</a></li>
@@ -193,7 +191,8 @@
                                         <div class="product-default-single-item product-color--golden swiper-slide">
                                             <div class="image-box">
                                                 <a href="/product-details-default" class="image-link">
-                                                    <img src="{{ asset($produk->foto) }}" loading="lazy" alt="">
+                                                    <img src="{{ asset($produk->foto) }}" loading="lazy" alt="" width="640"
+                                                        height="640">
                                                 </a>
                                                 <div class="action-link">
                                                     <div class="action-link-left">

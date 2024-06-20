@@ -47,7 +47,7 @@
                                 <tbody>
                                     @foreach ($wishlists as $wishlist)
                                         <tr>
-                                            <<td class="product_remove">
+                                            <td class="product_remove">
                                                 <form action="{{ route('wishlist.delete', $wishlist->id) }}" method="POST">
                                                     @csrf
                                                     @method('DELETE')
@@ -56,24 +56,23 @@
                                                         <i class="fa fa-trash-o"></i>
                                                     </button>
                                                 </form>
-                                                </td>
-                                                <td class="product_thumb"><a
-                                                        href="/product-details-default?id={{ $wishlist->produk->id_produk }}"><img
-                                                            src="{{ asset('storage/images/products/' . $wishlist->produk->foto) }}"
-                                                            alt=""></a></td>
-                                                <td class="product_name"><a
-                                                        href="/product-details-default">{{ $wishlist->produk->nama_produk }}</a>
-                                                </td>
-                                                <td class="product-price">
-                                                    {{ 'Rp. ' . number_format($wishlist->produk->harga, 0, ',', '.') }}
-                                                </td>
-                                                <td class="product_stock">
-                                                    {{ $wishlist->produk->stok > 0 ? 'In Stock' : 'Out of Stock' }}
-                                                </td>
-                                                <td class="product_addcart"><a
-                                                        href="{{ route('cart.add', $wishlist->produk->id_produk) }}"
-                                                        class="btn btn-md btn-golden" data-bs-toggle="modal"
-                                                        data-bs-target="#modalAddcart">Add To Cart</a></td>
+                                            </td>
+                                            <td class="product_thumb"><a
+                                                    href="/product-details-default?id={{ $wishlist->produk->id_produk }}"><img
+                                                        src="{{ asset($wishlist->produk->foto) }}" alt=""></a></td>
+                                            <td class="product_name"><a
+                                                    href="/product-details-default">{{ $wishlist->produk->nama_produk }}</a>
+                                            </td>
+                                            <td class="product-price">
+                                                {{ 'Rp. ' . number_format($wishlist->produk->harga, 0, ',', '.') }}
+                                            </td>
+                                            <td class="product_stock">
+                                                {{ $wishlist->produk->stok > 0 ? 'In Stock' : 'Out of Stock' }}
+                                            </td>
+                                            <td class="product_addcart"><a
+                                                    href="{{ route('cart.add', $wishlist->produk->id_produk) }}"
+                                                    class="btn btn-md btn-golden" data-bs-toggle="modal"
+                                                    data-bs-target="#modalAddcart">Add To Cart</a></td>
                                         </tr>
                                     @endforeach
                                 </tbody>

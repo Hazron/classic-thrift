@@ -30,7 +30,7 @@ class SessionController extends Controller
         if (Auth::attempt($credentials, $request->remember)) {
             $request->session()->regenerate();
 
-            return redirect()->intended('my-account')->with('success', 'You have successfully logged in!');
+            return redirect()->intended('dashboard')->with('success', 'You have successfully logged in!');
         }
 
         return back()->withErrors([

@@ -1,5 +1,7 @@
 @include('home.layout.navbar')
 
+
+
 <!-- ...:::: Start Shop Section:::... -->
 <div class="shop-section">
     <div class="container">
@@ -15,17 +17,15 @@
                             <ul class="sidebar-menu">
                                 <li>
                                     <ul class="sidebar-menu-collapse">
-                                        <!-- Start Single Menu Collapse List -->
                                         <li class="sidebar-menu-collapse-list">
                                             <div class="accordion">
-                                                <a href="#" class="accordion-title collapsed"
-                                                    data-bs-toggle="collapse" data-bs-target="#men-fashion"
-                                                    aria-expanded="false">T-Shirts</a>
+                                                <a href="#" class="accordion-title collapsed" data-bs-toggle="collapse"
+                                                    data-bs-target="#men-fashion" aria-expanded="false">T-Shirts</a>
                                                 <div id="men-fashion" class="collapse">
 
                                                 </div>
                                             </div>
-                                        </li> <!-- End Single Menu Collapse List -->
+                                        </li>
                                     </ul>
                                 </li>
                                 <li><a href="#"> Shirts</a></li>
@@ -85,8 +85,8 @@
                                                         data-aos="fade-up" data-aos-delay="0">
                                                         <div class="image-box">
                                                             <a href="/product-details-default" class="image-link">
-                                                                <img src="{{ asset($product->foto) }}" alt="">
-                                                                <!-- Ganti dengan sesuai dengan field yang sesuai di model Produk -->
+                                                                <img src="{{ asset($product->foto) }}" loading="lazy"
+                                                                    alt="">
                                                             </a>
                                                             <div class="action-link">
                                                                 <div class="action-link-left">
@@ -94,12 +94,19 @@
                                                                         data-bs-target="#modalAddcart">Cart</a>
                                                                 </div>
                                                                 <div class="action-link-right">
-                                                                    <a href="#" data-bs-toggle="modal"
-                                                                        data-bs-target="#modalQuickview"><i
-                                                                            class="icon-magnifier"></i></a>
-                                                                    <a href="#"><i class="icon-heart"></i></a>
-                                                                    <a href="#"><i class="icon-bag"></i></a>
+                                                                    <a href="#" class="add-to-wishlist"
+                                                                        data-produk-id="{{ $product->id_produk }}">
+                                                                        <i
+                                                                            class="{{ Auth::check() && Auth::user()->wishlists->contains('produk_id', $product->id_produk) ? 'fa-solid fa-heart' : 'icon-heart' }}"></i>
+                                                                    </a>
+
+                                                                    <a href="#" class="add-to-cart"
+                                                                        data-produk-id="{{ $product->id_produk }}">
+                                                                        <i
+                                                                            class="{{ Auth::check() && Auth::user()->keranjangs->contains('produk_id', $product->id_produk) ? 'fa-solid fa-shopping-cart' : 'icon-bag' }}"></i>
+                                                                    </a>
                                                                 </div>
+ 
                                                             </div>
                                                         </div>
                                                         <div class="content">
@@ -130,13 +137,11 @@
                             </div>
                         </div>
                     </div>
-                </div> <!-- End Tab Wrapper -->
-
-                <!-- Start Pagination -->
-                <!-- End Pagination -->
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 @include('home.layout.footer')
+

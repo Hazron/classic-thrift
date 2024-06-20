@@ -7,7 +7,7 @@ use App\Models\Keranjang;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-class HomeController extends Controller
+class DashboardController extends Controller
 {
     public function view()
     {
@@ -18,13 +18,13 @@ class HomeController extends Controller
             $wishlistItems = Wishlist::where('user_id', $user->id)->with('produk')->get();
             $keranjangItems = Keranjang::where('user_id', $user->id)->with('produk')->get();
 
-            return view('home.index', [
+            return view('home.dashboard', [
                 'wishlistCount' => $wishlistCount,
                 'wishlistItems' => $wishlistItems,
                 'keranjangItems' => $keranjangItems,
             ]);
         } else {
-            return view('home.index', [
+            return view('home.dashboard', [
                 'wishlistCount' => 'Anda belum login, klik login',
                 'wishlistItems' => [],
                 'keranjangItems' => [],
@@ -32,3 +32,4 @@ class HomeController extends Controller
         }
     }
 }
+

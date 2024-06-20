@@ -3,6 +3,7 @@
 
 
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,18 +39,18 @@
                                         <li class="has-dropdown">
                                             <a class="active main-menu-link" href="/">Home</a>
                                             <!-- Sub Menu -->
-                                           
+
                                         </li>
                                         <li class="has-dropdown has-megaitem">
                                             <a href="/shop-grid-sidebar-left">Shop</a>
                                             <!-- Mega Menu -->
-                                            
+
                                         </li>
-                                        
+
                                         <li class="has-dropdown">
                                             <a href="/faq">FAQ</a>
                                             <!-- Sub Menu -->
-                                            
+
                                         </li>
                                         <li>
                                             <a href="/about-us">About Us</a>
@@ -168,16 +169,16 @@
                     <ul>
                         <li>
                             <a href="/"><span>Home</span></a>
-                           
+
                         </li>
                         <li>
                             <a href="/shop-grid-sidebar-left"><span>Shop</span></a>
-                            
-                            
+
+
                         </li>
                         <li>
                             <a href="/faq"><span>FAQ</span></a>
-                           
+
                         </li>
                         <li><a href="/about-us">About Us</a></li>
                         <li><a href="/contact-us">Contact Us</a></li>
@@ -194,8 +195,8 @@
 
                 <address class="address">
                     <span>Adress: Jl. Mendalo</span>
-                <span>Call Us: 012345</span>
-                <span>Email: classicthrift@gmail.com</span>
+                    <span>Call Us: 012345</span>
+                    <span>Email: classicthrift@gmail.com</span>
                 </address>
 
                 <ul class="social-link">
@@ -205,7 +206,7 @@
                     <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                 </ul>
 
-                
+
             </div>
             <!-- End Mobile contact Info -->
 
@@ -238,7 +239,7 @@
                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
             </ul>
 
-           
+
         </div>
         <!-- End Mobile contact Info -->
     </div> <!-- ...:::: End Offcanvas Mobile Menu Section:::... -->
@@ -416,7 +417,7 @@
                         <h3 class="breadcrumb-title">Shop</h3>
                         <div class="breadcrumb-nav breadcrumb-nav-color--black breadcrumb-nav-hover-color--golden">
                             <nav aria-label="breadcrumb">
-                               
+
                             </nav>
                         </div>
                     </div>
@@ -447,7 +448,7 @@
                                                         data-bs-toggle="collapse" data-bs-target="#men-fashion"
                                                         aria-expanded="false">T-Shirts</a>
                                                     <div id="men-fashion" class="collapse">
-                                                       
+
                                                     </div>
                                                 </div>
                                             </li> <!-- End Single Menu Collapse List -->
@@ -457,7 +458,7 @@
                                     <li><a href="#"> Bags</a></li>
                                     <li><a href="#"> Shoes</a></li>
                                     <li><a href="#"> Trousers</a></li>
-                                    
+
                                 </ul>
                             </div>
                         </div> <!-- End Single Sidebar Widget -->
@@ -522,8 +523,7 @@
                                                                     <a href="#" data-bs-toggle="modal"
                                                                         data-bs-target="#modalQuickview"><i
                                                                             class="icon-magnifier"></i></a>
-                                                                    <a href="/wishlist"><i
-                                                                            class="icon-heart"></i></a>
+                                                                    <a href="/wishlist"><i class="icon-heart"></i></a>
                                                                     <a href="/compare"><i
                                                                             class="icon-shuffle"></i></a>
                                                                 </div>
@@ -532,17 +532,23 @@
                                                         <div class="content">
                                                             <div class="content-left">
                                                                 <h6 class="title"><a
-                                                                        href="/product-details-default">Cheap Clotes</a></h6>
+                                                                        href="/product-details-default">Cheap
+                                                                        Clotes</a></h6>
                                                                 <ul class="review-star">
-                                                                    <li class="fill"><i class="ion-android-star"></i>
+                                                                    <li class="fill"><i
+                                                                            class="ion-android-star"></i>
                                                                     </li>
-                                                                    <li class="fill"><i class="ion-android-star"></i>
+                                                                    <li class="fill"><i
+                                                                            class="ion-android-star"></i>
                                                                     </li>
-                                                                    <li class="fill"><i class="ion-android-star"></i>
+                                                                    <li class="fill"><i
+                                                                            class="ion-android-star"></i>
                                                                     </li>
-                                                                    <li class="fill"><i class="ion-android-star"></i>
+                                                                    <li class="fill"><i
+                                                                            class="ion-android-star"></i>
                                                                     </li>
-                                                                    <li class="empty"><i class="ion-android-star"></i>
+                                                                    <li class="empty"><i
+                                                                            class="ion-android-star"></i>
                                                                     </li>
                                                                 </ul>
                                                             </div>
@@ -552,59 +558,6 @@
 
                                                         </div>
                                                     </div>
-                                                    <!-- End Product Default Single Item -->
-                                                </div>
-                                                <div class="col-xl-4 col-sm-6 col-12">
-                                                    <!-- Start Product Default Single Item -->
-                                                    <div class="product-default-single-item product-color--golden"
-                                                    data-aos="fade-up" data-aos-delay="0">
-                                                    <div class="image-box">
-                                                        <a href="/product-details-default" class="image-link">
-                                                            <img src="images/product/default/home-1/baju1.webp"
-                                                                alt="">
-                                                            <img src="images/product/default/home-1/kemeja1.jpeg"
-                                                                alt="">
-                                                        </a>
-                                                        <div class="action-link">
-                                                            <div class="action-link-left">
-                                                                <a href="#" data-bs-toggle="modal"
-                                                                    data-bs-target="#modalAddcart">Cart</a>
-                                                            </div>
-                                                            <div class="action-link-right">
-                                                                <a href="#" data-bs-toggle="modal"
-                                                                    data-bs-target="#modalQuickview"><i
-                                                                        class="icon-magnifier"></i></a>
-                                                                <a href="/wishlist"><i
-                                                                        class="icon-heart"></i></a>
-                                                                <a href="/compare"><i
-                                                                        class="icon-shuffle"></i></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="content">
-                                                        <div class="content-left">
-                                                            <h6 class="title"><a
-                                                                    href="/product-details-default">Cheap Clotes</a></h6>
-                                                            <ul class="review-star">
-                                                                <li class="fill"><i class="ion-android-star"></i>
-                                                                </li>
-                                                                <li class="fill"><i class="ion-android-star"></i>
-                                                                </li>
-                                                                <li class="fill"><i class="ion-android-star"></i>
-                                                                </li>
-                                                                <li class="fill"><i class="ion-android-star"></i>
-                                                                </li>
-                                                                <li class="empty"><i class="ion-android-star"></i>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="content-right">
-                                                            <span class="price">Rp. 5</span>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                                    
                                                     <!-- End Product Default Single Item -->
                                                 </div>
                                                 <div class="col-xl-4 col-sm-6 col-12">
@@ -627,8 +580,7 @@
                                                                     <a href="#" data-bs-toggle="modal"
                                                                         data-bs-target="#modalQuickview"><i
                                                                             class="icon-magnifier"></i></a>
-                                                                    <a href="/wishlist"><i
-                                                                            class="icon-heart"></i></a>
+                                                                    <a href="/wishlist"><i class="icon-heart"></i></a>
                                                                     <a href="/compare"><i
                                                                             class="icon-shuffle"></i></a>
                                                                 </div>
@@ -637,17 +589,81 @@
                                                         <div class="content">
                                                             <div class="content-left">
                                                                 <h6 class="title"><a
-                                                                        href="/product-details-default">Cheap Clotes</a></h6>
+                                                                        href="/product-details-default">Cheap
+                                                                        Clotes</a></h6>
                                                                 <ul class="review-star">
-                                                                    <li class="fill"><i class="ion-android-star"></i>
+                                                                    <li class="fill"><i
+                                                                            class="ion-android-star"></i>
                                                                     </li>
-                                                                    <li class="fill"><i class="ion-android-star"></i>
+                                                                    <li class="fill"><i
+                                                                            class="ion-android-star"></i>
                                                                     </li>
-                                                                    <li class="fill"><i class="ion-android-star"></i>
+                                                                    <li class="fill"><i
+                                                                            class="ion-android-star"></i>
                                                                     </li>
-                                                                    <li class="fill"><i class="ion-android-star"></i>
+                                                                    <li class="fill"><i
+                                                                            class="ion-android-star"></i>
                                                                     </li>
-                                                                    <li class="empty"><i class="ion-android-star"></i>
+                                                                    <li class="empty"><i
+                                                                            class="ion-android-star"></i>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="content-right">
+                                                                <span class="price">Rp. 5</span>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- End Product Default Single Item -->
+                                                </div>
+                                                <div class="col-xl-4 col-sm-6 col-12">
+                                                    <!-- Start Product Default Single Item -->
+                                                    <div class="product-default-single-item product-color--golden"
+                                                        data-aos="fade-up" data-aos-delay="0">
+                                                        <div class="image-box">
+                                                            <a href="/product-details-default" class="image-link">
+                                                                <img src="images/product/default/home-1/baju1.webp"
+                                                                    alt="">
+                                                                <img src="images/product/default/home-1/kemeja1.jpeg"
+                                                                    alt="">
+                                                            </a>
+                                                            <div class="action-link">
+                                                                <div class="action-link-left">
+                                                                    <a href="#" data-bs-toggle="modal"
+                                                                        data-bs-target="#modalAddcart">Cart</a>
+                                                                </div>
+                                                                <div class="action-link-right">
+                                                                    <a href="#" data-bs-toggle="modal"
+                                                                        data-bs-target="#modalQuickview"><i
+                                                                            class="icon-magnifier"></i></a>
+                                                                    <a href="/wishlist"><i class="icon-heart"></i></a>
+                                                                    <a href="/compare"><i
+                                                                            class="icon-shuffle"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="content">
+                                                            <div class="content-left">
+                                                                <h6 class="title"><a
+                                                                        href="/product-details-default">Cheap
+                                                                        Clotes</a></h6>
+                                                                <ul class="review-star">
+                                                                    <li class="fill"><i
+                                                                            class="ion-android-star"></i>
+                                                                    </li>
+                                                                    <li class="fill"><i
+                                                                            class="ion-android-star"></i>
+                                                                    </li>
+                                                                    <li class="fill"><i
+                                                                            class="ion-android-star"></i>
+                                                                    </li>
+                                                                    <li class="fill"><i
+                                                                            class="ion-android-star"></i>
+                                                                    </li>
+                                                                    <li class="empty"><i
+                                                                            class="ion-android-star"></i>
                                                                     </li>
                                                                 </ul>
                                                             </div>
@@ -662,184 +678,199 @@
                                                 <div class="col-xl-4 col-sm-6 col-12">
                                                     <!-- Start Product Default Single Item -->
                                                     <div class="product-default-single-item product-color--golden"
-                                                    data-aos="fade-up" data-aos-delay="0">
-                                                    <div class="image-box">
-                                                        <a href="/product-details-default" class="image-link">
-                                                            <img src="images/product/default/home-1/baju1.webp"
-                                                                alt="">
-                                                            <img src="images/product/default/home-1/kemeja1.jpeg"
-                                                                alt="">
-                                                        </a>
-                                                        <div class="action-link">
-                                                            <div class="action-link-left">
-                                                                <a href="#" data-bs-toggle="modal"
-                                                                    data-bs-target="#modalAddcart">Cart</a>
+                                                        data-aos="fade-up" data-aos-delay="0">
+                                                        <div class="image-box">
+                                                            <a href="/product-details-default" class="image-link">
+                                                                <img src="images/product/default/home-1/baju1.webp"
+                                                                    alt="">
+                                                                <img src="images/product/default/home-1/kemeja1.jpeg"
+                                                                    alt="">
+                                                            </a>
+                                                            <div class="action-link">
+                                                                <div class="action-link-left">
+                                                                    <a href="#" data-bs-toggle="modal"
+                                                                        data-bs-target="#modalAddcart">Cart</a>
+                                                                </div>
+                                                                <div class="action-link-right">
+                                                                    <a href="#" data-bs-toggle="modal"
+                                                                        data-bs-target="#modalQuickview"><i
+                                                                            class="icon-magnifier"></i></a>
+                                                                    <a href="/wishlist"><i class="icon-heart"></i></a>
+                                                                    <a href="/compare"><i
+                                                                            class="icon-shuffle"></i></a>
+                                                                </div>
                                                             </div>
-                                                            <div class="action-link-right">
-                                                                <a href="#" data-bs-toggle="modal"
-                                                                    data-bs-target="#modalQuickview"><i
-                                                                        class="icon-magnifier"></i></a>
-                                                                <a href="/wishlist"><i
-                                                                        class="icon-heart"></i></a>
-                                                                <a href="/compare"><i
-                                                                        class="icon-shuffle"></i></a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <div class="content-left">
+                                                                <h6 class="title"><a
+                                                                        href="/product-details-default">Cheap
+                                                                        Clotes</a></h6>
+                                                                <ul class="review-star">
+                                                                    <li class="fill"><i
+                                                                            class="ion-android-star"></i>
+                                                                    </li>
+                                                                    <li class="fill"><i
+                                                                            class="ion-android-star"></i>
+                                                                    </li>
+                                                                    <li class="fill"><i
+                                                                            class="ion-android-star"></i>
+                                                                    </li>
+                                                                    <li class="fill"><i
+                                                                            class="ion-android-star"></i>
+                                                                    </li>
+                                                                    <li class="empty"><i
+                                                                            class="ion-android-star"></i>
+                                                                    </li>
+                                                                </ul>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="content">
-                                                        <div class="content-left">
-                                                            <h6 class="title"><a
-                                                                    href="/product-details-default">Cheap Clotes</a></h6>
-                                                            <ul class="review-star">
-                                                                <li class="fill"><i class="ion-android-star"></i>
-                                                                </li>
-                                                                <li class="fill"><i class="ion-android-star"></i>
-                                                                </li>
-                                                                <li class="fill"><i class="ion-android-star"></i>
-                                                                </li>
-                                                                <li class="fill"><i class="ion-android-star"></i>
-                                                                </li>
-                                                                <li class="empty"><i class="ion-android-star"></i>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="content-right">
-                                                            <span class="price">Rp. 5</span>
-                                                        </div>
+                                                            <div class="content-right">
+                                                                <span class="price">Rp. 5</span>
+                                                            </div>
 
+                                                        </div>
                                                     </div>
-                                                </div>
                                                     <!-- End Product Default Single Item -->
                                                 </div>
                                                 <div class="col-xl-4 col-sm-6 col-12">
                                                     <!-- Start Product Default Single Item -->
                                                     <div class="product-default-single-item product-color--golden"
-                                                    data-aos="fade-up" data-aos-delay="0">
-                                                    <div class="image-box">
-                                                        <a href="/product-details-default" class="image-link">
-                                                            <img src="images/product/default/home-1/baju1.webp"
-                                                                alt="">
-                                                            <img src="images/product/default/home-1/kemeja1.jpeg"
-                                                                alt="">
-                                                        </a>
-                                                        <div class="action-link">
-                                                            <div class="action-link-left">
-                                                                <a href="#" data-bs-toggle="modal"
-                                                                    data-bs-target="#modalAddcart">Cart</a>
+                                                        data-aos="fade-up" data-aos-delay="0">
+                                                        <div class="image-box">
+                                                            <a href="/product-details-default" class="image-link">
+                                                                <img src="images/product/default/home-1/baju1.webp"
+                                                                    alt="">
+                                                                <img src="images/product/default/home-1/kemeja1.jpeg"
+                                                                    alt="">
+                                                            </a>
+                                                            <div class="action-link">
+                                                                <div class="action-link-left">
+                                                                    <a href="#" data-bs-toggle="modal"
+                                                                        data-bs-target="#modalAddcart">Cart</a>
+                                                                </div>
+                                                                <div class="action-link-right">
+                                                                    <a href="#" data-bs-toggle="modal"
+                                                                        data-bs-target="#modalQuickview"><i
+                                                                            class="icon-magnifier"></i></a>
+                                                                    <a href="/wishlist"><i class="icon-heart"></i></a>
+                                                                    <a href="/compare"><i
+                                                                            class="icon-shuffle"></i></a>
+                                                                </div>
                                                             </div>
-                                                            <div class="action-link-right">
-                                                                <a href="#" data-bs-toggle="modal"
-                                                                    data-bs-target="#modalQuickview"><i
-                                                                        class="icon-magnifier"></i></a>
-                                                                <a href="/wishlist"><i
-                                                                        class="icon-heart"></i></a>
-                                                                <a href="/compare"><i
-                                                                        class="icon-shuffle"></i></a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <div class="content-left">
+                                                                <h6 class="title"><a
+                                                                        href="/product-details-default">Cheap
+                                                                        Clotes</a></h6>
+                                                                <ul class="review-star">
+                                                                    <li class="fill"><i
+                                                                            class="ion-android-star"></i>
+                                                                    </li>
+                                                                    <li class="fill"><i
+                                                                            class="ion-android-star"></i>
+                                                                    </li>
+                                                                    <li class="fill"><i
+                                                                            class="ion-android-star"></i>
+                                                                    </li>
+                                                                    <li class="fill"><i
+                                                                            class="ion-android-star"></i>
+                                                                    </li>
+                                                                    <li class="empty"><i
+                                                                            class="ion-android-star"></i>
+                                                                    </li>
+                                                                </ul>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="content">
-                                                        <div class="content-left">
-                                                            <h6 class="title"><a
-                                                                    href="/product-details-default">Cheap Clotes</a></h6>
-                                                            <ul class="review-star">
-                                                                <li class="fill"><i class="ion-android-star"></i>
-                                                                </li>
-                                                                <li class="fill"><i class="ion-android-star"></i>
-                                                                </li>
-                                                                <li class="fill"><i class="ion-android-star"></i>
-                                                                </li>
-                                                                <li class="fill"><i class="ion-android-star"></i>
-                                                                </li>
-                                                                <li class="empty"><i class="ion-android-star"></i>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="content-right">
-                                                            <span class="price">Rp. 5</span>
-                                                        </div>
+                                                            <div class="content-right">
+                                                                <span class="price">Rp. 5</span>
+                                                            </div>
 
+                                                        </div>
                                                     </div>
-                                                </div>
                                                     <!-- End Product Default Single Item -->
                                                 </div>
                                                 <div class="col-xl-4 col-sm-6 col-12">
                                                     <!-- Start Product Default Single Item -->
                                                     <div class="product-default-single-item product-color--golden"
-                                                    data-aos="fade-up" data-aos-delay="0">
-                                                    <div class="image-box">
-                                                        <a href="/product-details-default" class="image-link">
-                                                            <img src="images/product/default/home-1/baju1.webp"
-                                                                alt="">
-                                                            <img src="images/product/default/home-1/kemeja1.jpeg"
-                                                                alt="">
-                                                        </a>
-                                                        <div class="action-link">
-                                                            <div class="action-link-left">
-                                                                <a href="#" data-bs-toggle="modal"
-                                                                    data-bs-target="#modalAddcart">Cart</a>
+                                                        data-aos="fade-up" data-aos-delay="0">
+                                                        <div class="image-box">
+                                                            <a href="/product-details-default" class="image-link">
+                                                                <img src="images/product/default/home-1/baju1.webp"
+                                                                    alt="">
+                                                                <img src="images/product/default/home-1/kemeja1.jpeg"
+                                                                    alt="">
+                                                            </a>
+                                                            <div class="action-link">
+                                                                <div class="action-link-left">
+                                                                    <a href="#" data-bs-toggle="modal"
+                                                                        data-bs-target="#modalAddcart">Cart</a>
+                                                                </div>
+                                                                <div class="action-link-right">
+                                                                    <a href="#" data-bs-toggle="modal"
+                                                                        data-bs-target="#modalQuickview"><i
+                                                                            class="icon-magnifier"></i></a>
+                                                                    <a href="/wishlist"><i class="icon-heart"></i></a>
+                                                                    <a href="/compare"><i
+                                                                            class="icon-shuffle"></i></a>
+                                                                </div>
                                                             </div>
-                                                            <div class="action-link-right">
-                                                                <a href="#" data-bs-toggle="modal"
-                                                                    data-bs-target="#modalQuickview"><i
-                                                                        class="icon-magnifier"></i></a>
-                                                                <a href="/wishlist"><i
-                                                                        class="icon-heart"></i></a>
-                                                                <a href="/compare"><i
-                                                                        class="icon-shuffle"></i></a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <div class="content-left">
+                                                                <h6 class="title"><a
+                                                                        href="/product-details-default">Cheap
+                                                                        Clotes</a></h6>
+                                                                <ul class="review-star">
+                                                                    <li class="fill"><i
+                                                                            class="ion-android-star"></i>
+                                                                    </li>
+                                                                    <li class="fill"><i
+                                                                            class="ion-android-star"></i>
+                                                                    </li>
+                                                                    <li class="fill"><i
+                                                                            class="ion-android-star"></i>
+                                                                    </li>
+                                                                    <li class="fill"><i
+                                                                            class="ion-android-star"></i>
+                                                                    </li>
+                                                                    <li class="empty"><i
+                                                                            class="ion-android-star"></i>
+                                                                    </li>
+                                                                </ul>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="content">
-                                                        <div class="content-left">
-                                                            <h6 class="title"><a
-                                                                    href="/product-details-default">Cheap Clotes</a></h6>
-                                                            <ul class="review-star">
-                                                                <li class="fill"><i class="ion-android-star"></i>
-                                                                </li>
-                                                                <li class="fill"><i class="ion-android-star"></i>
-                                                                </li>
-                                                                <li class="fill"><i class="ion-android-star"></i>
-                                                                </li>
-                                                                <li class="fill"><i class="ion-android-star"></i>
-                                                                </li>
-                                                                <li class="empty"><i class="ion-android-star"></i>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="content-right">
-                                                            <span class="price">Rp. 5</span>
-                                                        </div>
+                                                            <div class="content-right">
+                                                                <span class="price">Rp. 5</span>
+                                                            </div>
 
+                                                        </div>
                                                     </div>
-                                                </div>
                                                     <!-- End Product Default Single Item -->
                                                 </div>
                                                 <div class="col-xl-4 col-sm-6 col-12">
                                                     <!-- Start Product Default Single Item -->
-                                                   
+
                                                     <!-- End Product Default Single Item -->
                                                 </div>
                                                 <div class="col-xl-4 col-sm-6 col-12">
                                                     <!-- Start Product Default Single Item -->
-                                                    
+
                                                     <!-- End Product Default Single Item -->
                                                 </div>
                                                 <div class="col-xl-4 col-sm-6 col-12">
-                                                   
+
                                                     <!-- End Product Default Single Item -->
                                                 </div>
                                                 <div class="col-xl-4 col-sm-6 col-12">
-                                                  
+
                                                     <!-- End Product Default Single Item -->
                                                 </div>
                                                 <div class="col-xl-4 col-sm-6 col-12">
-                                                    
+
                                                     <!-- End Product Default Single Item -->
                                                 </div>
                                                 <div class="col-xl-4 col-sm-6 col-12">
                                                     <!-- Start Product Default Single Item -->
-                                                   
+
                                                     <!-- End Product Default Single Item -->
                                                 </div>
                                             </div>
@@ -861,13 +892,19 @@
                                                         </a>
                                                         <div class="product-list-content">
                                                             <h5 class="product-list-link"><a
-                                                                    href="/product-details-default">Cheap Clothes</a></h5>
+                                                                    href="/product-details-default">Cheap Clothes</a>
+                                                            </h5>
                                                             <ul class="review-star">
-                                                                <li class="fill"><i class="ion-android-star"></i></li>
-                                                                <li class="fill"><i class="ion-android-star"></i></li>
-                                                                <li class="fill"><i class="ion-android-star"></i></li>
-                                                                <li class="fill"><i class="ion-android-star"></i></li>
-                                                                <li class="empty"><i class="ion-android-star"></i></li>
+                                                                <li class="fill"><i class="ion-android-star"></i>
+                                                                </li>
+                                                                <li class="fill"><i class="ion-android-star"></i>
+                                                                </li>
+                                                                <li class="fill"><i class="ion-android-star"></i>
+                                                                </li>
+                                                                <li class="fill"><i class="ion-android-star"></i>
+                                                                </li>
+                                                                <li class="empty"><i class="ion-android-star"></i>
+                                                                </li>
                                                             </ul>
                                                             <span class="product-list-price">Rp. 5</span>
                                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -906,13 +943,19 @@
                                                         </a>
                                                         <div class="product-list-content">
                                                             <h5 class="product-list-link"><a
-                                                                    href="/product-details-default">Cheap Clothes</a></h5>
+                                                                    href="/product-details-default">Cheap Clothes</a>
+                                                            </h5>
                                                             <ul class="review-star">
-                                                                <li class="fill"><i class="ion-android-star"></i></li>
-                                                                <li class="fill"><i class="ion-android-star"></i></li>
-                                                                <li class="fill"><i class="ion-android-star"></i></li>
-                                                                <li class="fill"><i class="ion-android-star"></i></li>
-                                                                <li class="empty"><i class="ion-android-star"></i></li>
+                                                                <li class="fill"><i class="ion-android-star"></i>
+                                                                </li>
+                                                                <li class="fill"><i class="ion-android-star"></i>
+                                                                </li>
+                                                                <li class="fill"><i class="ion-android-star"></i>
+                                                                </li>
+                                                                <li class="fill"><i class="ion-android-star"></i>
+                                                                </li>
+                                                                <li class="empty"><i class="ion-android-star"></i>
+                                                                </li>
                                                             </ul>
                                                             <span class="product-list-price">Rp. 5</span>
                                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -951,13 +994,19 @@
                                                         </a>
                                                         <div class="product-list-content">
                                                             <h5 class="product-list-link"><a
-                                                                    href="/product-details-default">Cheap Clothes</a></h5>
+                                                                    href="/product-details-default">Cheap Clothes</a>
+                                                            </h5>
                                                             <ul class="review-star">
-                                                                <li class="fill"><i class="ion-android-star"></i></li>
-                                                                <li class="fill"><i class="ion-android-star"></i></li>
-                                                                <li class="fill"><i class="ion-android-star"></i></li>
-                                                                <li class="fill"><i class="ion-android-star"></i></li>
-                                                                <li class="empty"><i class="ion-android-star"></i></li>
+                                                                <li class="fill"><i class="ion-android-star"></i>
+                                                                </li>
+                                                                <li class="fill"><i class="ion-android-star"></i>
+                                                                </li>
+                                                                <li class="fill"><i class="ion-android-star"></i>
+                                                                </li>
+                                                                <li class="fill"><i class="ion-android-star"></i>
+                                                                </li>
+                                                                <li class="empty"><i class="ion-android-star"></i>
+                                                                </li>
                                                             </ul>
                                                             <span class="product-list-price">Rp. 5</span>
                                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -996,13 +1045,19 @@
                                                         </a>
                                                         <div class="product-list-content">
                                                             <h5 class="product-list-link"><a
-                                                                    href="/product-details-default">Cheap Clothes</a></h5>
+                                                                    href="/product-details-default">Cheap Clothes</a>
+                                                            </h5>
                                                             <ul class="review-star">
-                                                                <li class="fill"><i class="ion-android-star"></i></li>
-                                                                <li class="fill"><i class="ion-android-star"></i></li>
-                                                                <li class="fill"><i class="ion-android-star"></i></li>
-                                                                <li class="fill"><i class="ion-android-star"></i></li>
-                                                                <li class="empty"><i class="ion-android-star"></i></li>
+                                                                <li class="fill"><i class="ion-android-star"></i>
+                                                                </li>
+                                                                <li class="fill"><i class="ion-android-star"></i>
+                                                                </li>
+                                                                <li class="fill"><i class="ion-android-star"></i>
+                                                                </li>
+                                                                <li class="fill"><i class="ion-android-star"></i>
+                                                                </li>
+                                                                <li class="empty"><i class="ion-android-star"></i>
+                                                                </li>
                                                             </ul>
                                                             <span class="product-list-price">Rp. 5</span>
                                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -1040,11 +1095,11 @@
                     </div> <!-- End Tab Wrapper -->
 
                     <!-- Start Pagination -->
-                     <!-- End Pagination -->
+                    <!-- End Pagination -->
                 </div>
             </div>
         </div>
-    </div> <!-- ...:::: End Shop Section:::... -->
+    </div>
 
     <!-- Start Footer Section -->
     <footer class="footer-section footer-bg">
@@ -1060,9 +1115,9 @@
                                 <h5 class="title">INFORMATION</h5>
                                 <ul class="footer-nav">
                                     <li><a href="#">Shipping Information</a></li>
-                                   
+
                                     <li><a href="/contact-us">Contact</a></li>
-                                    
+
                                 </ul>
                             </div>
                             <!-- End Footer Single Item -->
@@ -1073,11 +1128,11 @@
                                 data-aos-delay="200">
                                 <h5 class="title">MY ACCOUNT</h5>
                                 <ul class="footer-nav">
-                                   
+
                                     <li><a href="/wishlist">Wishlist</a></li>
                                     <li><a href="/privacy-policy">Security</a></li>
                                     <li><a href="/faq">FAQ</a></li>
-                                    
+
                                 </ul>
                             </div>
                             <!-- End Footer Single Item -->
@@ -1092,7 +1147,7 @@
                                     <li><a href="#">Bags</a></li>
                                     <li><a href="#">Pants</a></li>
                                     <li><a href="#">Shoes</a></li>
-                                  
+
                                 </ul>
                             </div>
                             <!-- End Footer Single Item -->
@@ -1156,7 +1211,7 @@
             <!-- Start Footer Bottom -->
         </div>
     </footer>
-      
+
     <!-- End Footer Section -->
 
     <!-- material-scrolltop button -->
@@ -1181,12 +1236,13 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="modal-add-cart-product-img">
-                                            <img class="img-fluid"
-                                                src="images/product/default/home-1/baju1.webp" alt="">
+                                            <img class="img-fluid" src="images/product/default/home-1/baju1.webp"
+                                                alt="">
                                         </div>
                                     </div>
                                     <div class="col-md-8">
-                                        <div class="modal-add-cart-info"><i class="fa fa-check-square"></i>Success in Cart
+                                        <div class="modal-add-cart-info"><i class="fa fa-check-square"></i>Success in
+                                            Cart
                                         </div>
                                         <div class="modal-add-cart-product-cart-buttons">
                                             <a href="/cart">View Cart</a>
@@ -1198,10 +1254,11 @@
                             <div class="col-md-5 modal-border">
                                 <ul class="modal-add-cart-product-shipping-info">
                                     <li> <strong><i class="icon-shopping-cart"></i> 1 Items in Your Cart
-                                        .</strong></li>
+                                            .</strong></li>
                                     <li> <strong>TOTAL PRICE: </strong> <span>Rp. 5</span></li>
-                                    <li class="modal-continue-button"><a href="#" data-bs-dismiss="modal">Continue Shopping
-                                    </a></li>
+                                    <li class="modal-continue-button"><a href="#"
+                                            data-bs-dismiss="modal">Continue Shopping
+                                        </a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1209,7 +1266,7 @@
                 </div>
             </div>
         </div>
-    </div>  <!-- End Modal Add cart -->
+    </div> <!-- End Modal Add cart -->
 
     <!-- Start Modal Quickview cart -->
     <div class="modal fade" id="modalQuickview" tabindex="-1" role="dialog" aria-hidden="true">
@@ -1257,24 +1314,24 @@
                                         class="product-image-thumb modal-product-image-thumb swiper-container pos-relative mt-5">
                                         <div class="swiper-wrapper">
                                             <div class="product-image-thumb-single swiper-slide">
-                                                <img class="img-fluid"
-                                                    src="images/product/default/home-1/baju1.webp" alt="">
+                                                <img class="img-fluid" src="images/product/default/home-1/baju1.webp"
+                                                    alt="">
                                             </div>
                                             <div class="product-image-thumb-single swiper-slide">
-                                                <img class="img-fluid"
-                                                    src="images/product/default/home-1/baju2.jpg" alt="">
+                                                <img class="img-fluid" src="images/product/default/home-1/baju2.jpg"
+                                                    alt="">
                                             </div>
                                             <div class="product-image-thumb-single swiper-slide">
-                                                <img class="img-fluid"
-                                                    src="images/product/default/home-1/baju3.webp" alt="">
+                                                <img class="img-fluid" src="images/product/default/home-1/baju3.webp"
+                                                    alt="">
                                             </div>
                                             <div class="product-image-thumb-single swiper-slide">
-                                                <img class="img-fluid"
-                                                    src="images/product/default/home-1/baju4.webp" alt="">
+                                                <img class="img-fluid" src="images/product/default/home-1/baju4.webp"
+                                                    alt="">
                                             </div>
                                             <div class="product-image-thumb-single swiper-slide">
-                                                <img class="img-fluid"
-                                                    src="images/product/default/home-1/celana1.jpg" alt="">
+                                                <img class="img-fluid" src="images/product/default/home-1/celana1.jpg"
+                                                    alt="">
                                             </div>
                                             <div class="product-image-thumb-single swiper-slide">
                                                 <img class="img-fluid"
@@ -1298,12 +1355,13 @@
                                     <!-- Start Product Variable Area -->
                                     <div class="product-details-variable">
                                         <!-- Product Variable Single Item -->
-                                        
+
                                         <!-- Product Variable Single Item -->
                                         <div class="d-flex align-items-center flex-wrap">
-                                            
+
                                             <div class="product-add-to-cart-btn">
-                                                <a href="#" data-bs-toggle="modal" data-bs-target="#modalAddcart">Add To Cart</a>
+                                                <a href="#" data-bs-toggle="modal"
+                                                    data-bs-target="#modalAddcart">Add To Cart</a>
                                             </div>
                                         </div>
                                     </div> <!-- End Product Variable Area -->
@@ -1317,12 +1375,17 @@
                                     <div class="modal-product-details-social">
                                         <span class="title">Share Products</span>
                                         <ul>
-                                            <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a></li>
-                                            <li><a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                                            <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
                                             </li>
-                                            <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                            </li>
+                                            <li><a href="#" class="pinterest"><i
+                                                        class="fa fa-pinterest"></i></a></li>
+                                            <li><a href="#" class="google-plus"><i
+                                                        class="fa fa-google-plus"></i></a>
+                                            </li>
+                                            <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                                            </li>
                                         </ul>
 
                                     </div> <!-- End  Product Details Social Area-->
@@ -1335,7 +1398,7 @@
         </div>
     </div> <!-- End Modal Quickview cart -->
 
-   
+
     <script src="js/vendor/vendor.min.js"></script>
     <script src="js/plugins/plugins.min.js"></script>
 

@@ -1,4 +1,5 @@
 @include('home.layout.navbar')
+
 <div id="offcanvas-wishlist" class="offcanvas offcanvas-rightside offcanvas-add-cart-section">
     <!-- Start Offcanvas Header -->
     <div class="offcanvas-header text-right">

@@ -40,7 +40,7 @@
                                             <a class="active main-menu-link" href="/">Home</a>
                                         </li>
                                         <li class="has-dropdown has-megaitem">
-                                            <a href="/shop-grid-sidebar-left">SHOP</a>
+                                            <a href="/shop">SHOP</a>
                                         </li>
                                         <li class="has-dropdown">
                                             <a href="/faq">FAQ</a>

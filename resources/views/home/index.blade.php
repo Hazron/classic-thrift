@@ -9,9 +9,9 @@
 
     <title>ClassicThrift</title>
 
-    <link rel="stylesheet" href="css/vendor/vendor.min.css">
-    <link rel="stylesheet" href="css/plugins/plugins.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="{{ asset('css/vendor/vendor.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/plugins/plugins.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.min.css') }}">
 
 </head>
 

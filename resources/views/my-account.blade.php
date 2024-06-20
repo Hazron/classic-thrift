@@ -3,6 +3,7 @@
 
 
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,18 +41,18 @@
                                         <li class="has-dropdown">
                                             <a class="active main-menu-link" href="/">Home</a>
                                             <!-- Sub Menu -->
-                                           
+
                                         </li>
                                         <li class="has-dropdown has-megaitem">
                                             <a href="/shop-grid-sidebar-left">SHOP</a>
                                             <!-- Mega Menu -->
-                                            
+
                                         </li>
-                                        
+
                                         <li class="has-dropdown">
                                             <a href="/faq">FAQ</a>
                                             <!-- Sub Menu -->
-                                            
+
                                         </li>
                                         <li>
                                             <a href="/about-us">About Us</a>
@@ -169,14 +170,14 @@
                     <ul>
                         <li>
                             <a href="/"><span>Home</span></a>
-                            
+
                         </li>
                         <li>
                             <a href="/shop-grid-sidebar-left"><span>Shop</span></a>
-                        
+
                         </li>
-                            <a href="/faq"><span>FAQ</span></a>
-                           
+                        <a href="/faq"><span>FAQ</span></a>
+
                         </li>
                         <li><a href="/about-us">About Us</a></li>
                         <li><a href="/contact-us">Contact Us</a></li>
@@ -193,8 +194,8 @@
 
                 <address class="address">
                     <span>Address: Jl. Mendalo</span>
-                <span>Call Us: 012345</span>
-                <span>Email: classicthrift@gmail.com</span>
+                    <span>Call Us: 012345</span>
+                    <span>Email: classicthrift@gmail.com</span>
                 </address>
 
                 <ul class="social-link">
@@ -204,7 +205,7 @@
                     <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                 </ul>
 
-                
+
             </div>
             <!-- End Mobile contact Info -->
 
@@ -237,7 +238,7 @@
                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
             </ul>
 
-            
+
         </div>
         <!-- End Mobile contact Info -->
     </div> <!-- ...:::: End Offcanvas Mobile Menu Section:::... -->
@@ -416,7 +417,7 @@
                         <h3 class="breadcrumb-title">My Account</h3>
                         <div class="breadcrumb-nav breadcrumb-nav-color--black breadcrumb-nav-hover-color--golden">
                             <nav aria-label="breadcrumb">
-                               
+
                             </nav>
                         </div>
                     </div>
@@ -438,14 +439,20 @@
                             </li>
                             <li> <a href="#orders" data-bs-toggle="tab"
                                     class="nav-link btn btn-block btn-md btn-black-default-hover">Orders</a></li>
-                           
+
                             <li><a href="#address" data-bs-toggle="tab"
                                     class="nav-link btn btn-block btn-md btn-black-default-hover">Addresses</a></li>
                             <li><a href="#account-details" data-bs-toggle="tab"
                                     class="nav-link btn btn-block btn-md btn-black-default-hover">Account details</a>
                             </li>
-                            <li><a href="/login"
-                                    class="nav-link btn btn-block btn-md btn-black-default-hover">logout</a></li>
+                            <li><a href="#"
+                                    onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();"
+                                    class="nav-link btn btn-block btn-md btn-black-default-hover">Logout</a></li>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                style="display: none;">
+                                @csrf
+                            </form>
                         </ul>
                     </div>
                 </div>
@@ -454,7 +461,8 @@
                     <div class="tab-content dashboard_content" data-aos="fade-up" data-aos-delay="200">
                         <div class="tab-pane fade show active" id="dashboard">
                             <h4>Dashboard </h4>
-                            <p>From your account dashboard. you can easily check &amp; view your <a href="#">recent
+                            <p>From your account dashboard. you can easily check &amp; view your <a
+                                    href="#">recent
                                     orders</a>, manage your <a href="#">shipping and billing addresses</a> and <a
                                     href="#">Edit your password and account details.</a></p>
                         </div>
@@ -490,8 +498,8 @@
                                 </table>
                             </div>
                         </div>
-                        
-                        
+
+
                         <div class="tab-pane" id="address">
                             <p>The following addresses will be used on the checkout page by default.</p>
                             <h5 class="billing-address">Billing address</h5>
@@ -507,7 +515,7 @@
                                 <div class="login_form_container">
                                     <div class="account_login_form">
                                         <form action="#">
-                                            
+
                                             <div class="input-radio">
                                                 <span class="custom-radio"><input type="radio" value="1"
                                                         name="id_gender"> Mr.</span>
@@ -534,7 +542,7 @@
                                                 <label>Birthdate</label>
                                                 <input type="date" name="birthday">
                                             </div>
-                                            
+
                                             <div class="save_button mt-3">
                                                 <button class="btn btn-md btn-black-default-hover"
                                                     type="submit">Save</button>
@@ -564,9 +572,9 @@
                                 <h5 class="title">INFORMATION</h5>
                                 <ul class="footer-nav">
                                     <li><a href="#">Shipping Information</a></li>
-                                   
+
                                     <li><a href="/contact-us">Contact</a></li>
-                                    
+
                                 </ul>
                             </div>
                             <!-- End Footer Single Item -->
@@ -577,13 +585,11 @@
                                 data-aos-delay="200">
                                 <h5 class="title">MY ACCOUNT</h5>
                                 <ul class="footer-nav">
-                                   
-                                    <li><a href="/wishlist"
-                                    
-                                    >Wishlist</a></li>
+
+                                    <li><a href="/wishlist">Wishlist</a></li>
                                     <li><a href="/privacy-policy">Security</a></li>
                                     <li><a href="/faq">FAQ</a></li>
-                                    
+
                                 </ul>
                             </div>
                             <!-- End Footer Single Item -->
@@ -598,7 +604,7 @@
                                     <li><a href="#">Bags</a></li>
                                     <li><a href="#">Pants</a></li>
                                     <li><a href="#">Shoes</a></li>
-                                  
+
                                 </ul>
                             </div>
                             <!-- End Footer Single Item -->
@@ -660,190 +666,214 @@
             <!-- Start Footer Center -->
 
             <!-- Start Footer Bottom -->
-           
-    <!-- End Footer Section -->
 
-    <!-- material-scrolltop button -->
-    <button class="material-scrolltop" type="button"></button>
+            <!-- End Footer Section -->
 
-    <!-- Start Modal Add cart -->
-    <div class="modal fade" id="modalAddcart" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog  modal-dialog-centered modal-xl" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col text-right">
-                                <button type="button" class="close modal-close" data-bs-dismiss="modal"
-                                    aria-label="Close">
-                                    <span aria-hidden="true"> <i class="fa fa-times"></i></span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-7">
+            <!-- material-scrolltop button -->
+            <button class="material-scrolltop" type="button"></button>
+
+            <!-- Start Modal Add cart -->
+            <div class="modal fade" id="modalAddcart" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog  modal-dialog-centered modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="modal-add-cart-product-img">
-                                            <img class="img-fluid"
-                                                src="images/product/default/home-1/baju1.webp" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="modal-add-cart-info"><i class="fa fa-check-square"></i>Success in Cart
-                                        </div>
-                                        <div class="modal-add-cart-product-cart-buttons">
-                                            <a href="/cart">View Cart</a>
-                                            <a href="/checkout">Checkout</a>
-                                        </div>
+                                    <div class="col text-right">
+                                        <button type="button" class="close modal-close" data-bs-dismiss="modal"
+                                            aria-label="Close">
+                                            <span aria-hidden="true"> <i class="fa fa-times"></i></span>
+                                        </button>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-5 modal-border">
-                                <ul class="modal-add-cart-product-shipping-info">
-                                    <li> <strong><i class="icon-shopping-cart"></i> 1 Items in Your Cart
-                                        .</strong></li>
-                                    <li> <strong>TOTAL PRICE: </strong> <span>Rp. 5</span></li>
-                                    <li class="modal-continue-button"><a href="#" data-bs-dismiss="modal">Continue Shopping
-                                    </a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> <!-- End Modal Add cart -->
-
-    <!-- Start Modal Quickview cart -->
-    <div class="modal fade" id="modalQuickview" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog  modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col text-right">
-                                <button type="button" class="close modal-close" data-bs-dismiss="modal"
-                                    aria-label="Close">
-                                    <span aria-hidden="true"> <i class="fa fa-times"></i></span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="product-details-gallery-area mb-7">
-                                    <!-- Start Large Image -->
-                                    <div class="product-large-image modal-product-image-large swiper-container">
-                                        <div class="swiper-wrapper">
-                                            <div class="product-image-large-image swiper-slide img-responsive">
-                                                <img src="images/product/default/home-1/baju1.webp" alt="">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="modal-add-cart-product-img">
+                                                    <img class="img-fluid"
+                                                        src="images/product/default/home-1/baju1.webp" alt="">
+                                                </div>
                                             </div>
-                                            <div class="product-image-large-image swiper-slide img-responsive">
-                                                <img src="images/product/default/home-1/baju2.jpg" alt="">
-                                            </div>
-                                            <div class="product-image-large-image swiper-slide img-responsive">
-                                                <img src="images/product/default/home-1/baju3.webp" alt="">
-                                            </div>
-                                            <div class="product-image-large-image swiper-slide img-responsive">
-                                                <img src="images/product/default/home-1/baju4.webp" alt="">
-                                            </div>
-                                            <div class="product-image-large-image swiper-slide img-responsive">
-                                                <img src="images/product/default/home-1/celana1.jpg" alt="">
-                                            </div>
-                                            <div class="product-image-large-image swiper-slide img-responsive">
-                                                <img src="images/product/default/home-1/celana2.jpeg" alt="">
+                                            <div class="col-md-8">
+                                                <div class="modal-add-cart-info"><i
+                                                        class="fa fa-check-square"></i>Success in Cart
+                                                </div>
+                                                <div class="modal-add-cart-product-cart-buttons">
+                                                    <a href="/cart">View Cart</a>
+                                                    <a href="/checkout">Checkout</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- End Large Image -->
-                                    <!-- Start Thumbnail Image -->
-                                    <div
-                                        class="product-image-thumb modal-product-image-thumb swiper-container pos-relative mt-5">
-                                        <div class="swiper-wrapper">
-                                            <div class="product-image-thumb-single swiper-slide">
-                                                <img class="img-fluid"
-                                                    src="images/product/default/home-1/baju1.webp" alt="">
-                                            </div>
-                                            <div class="product-image-thumb-single swiper-slide">
-                                                <img class="img-fluid"
-                                                    src="images/product/default/home-1/baju2.jpg" alt="">
-                                            </div>
-                                            <div class="product-image-thumb-single swiper-slide">
-                                                <img class="img-fluid"
-                                                    src="images/product/default/home-1/baju3.webp" alt="">
-                                            </div>
-                                            <div class="product-image-thumb-single swiper-slide">
-                                                <img class="img-fluid"
-                                                    src="images/product/default/home-1/baju4.webp" alt="">
-                                            </div>
-                                            <div class="product-image-thumb-single swiper-slide">
-                                                <img class="img-fluid"
-                                                    src="images/product/default/home-1/celana1.jpg" alt="">
-                                            </div>
-                                            <div class="product-image-thumb-single swiper-slide">
-                                                <img class="img-fluid"
-                                                    src="images/product/default/home-1/celana2.jpeg" alt="">
-                                            </div>
-                                        </div>
-                                        <!-- Add Arrows -->
-                                        <div class="gallery-thumb-arrow swiper-button-next"></div>
-                                        <div class="gallery-thumb-arrow swiper-button-prev"></div>
-                                    </div>
-                                    <!-- End Thumbnail Image -->
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="modal-product-details-content-area">
-                                    <!-- Start  Product Details Text Area-->
-                                    <div class="product-details-text">
-                                        <h4 class="title">Cheap Clothes</h4>
-                                        <div class="price">Rp. 5</div>
-                                    </div> <!-- End  Product Details Text Area-->
-                                    <!-- Start Product Variable Area -->
-                                    <div class="product-details-variable">
-                                        <!-- Product Variable Single Item -->
-                                        
-                                        <!-- Product Variable Single Item -->
-                                        <div class="d-flex align-items-center flex-wrap">
-                                            
-                                            <div class="product-add-to-cart-btn">
-                                                <a href="#" data-bs-toggle="modal" data-bs-target="#modalAddcart">Add To Cart</a>
-                                            </div>
-                                        </div>
-                                    </div> <!-- End Product Variable Area -->
-                                    <div class="modal-product-about-text">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia iste
-                                            laborum ad impedit pariatur esse optio tempora sint ullam autem deleniti nam
-                                            in quos qui nemo ipsum numquam, reiciendis maiores quidem aperiam, rerum vel
-                                            recusandae</p>
-                                    </div>
-                                    <!-- Start  Product Details Social Area-->
-                                    <div class="modal-product-details-social">
-                                        <span class="title">Share Products</span>
-                                        <ul>
-                                            <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a></li>
-                                            <li><a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                                            </li>
-                                            <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                    <div class="col-md-5 modal-border">
+                                        <ul class="modal-add-cart-product-shipping-info">
+                                            <li> <strong><i class="icon-shopping-cart"></i> 1 Items in Your Cart
+                                                    .</strong></li>
+                                            <li> <strong>TOTAL PRICE: </strong> <span>Rp. 5</span></li>
+                                            <li class="modal-continue-button"><a href="#"
+                                                    data-bs-dismiss="modal">Continue Shopping
+                                                </a></li>
                                         </ul>
-
-                                    </div> <!-- End  Product Details Social Area-->
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div> <!-- End Modal Quickview cart -->
+            </div> <!-- End Modal Add cart -->
 
-    <script src="js/vendor/vendor.min.js"></script>
-    <script src="js/plugins/plugins.min.js"></script>
+            <!-- Start Modal Quickview cart -->
+            <div class="modal fade" id="modalQuickview" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog  modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col text-right">
+                                        <button type="button" class="close modal-close" data-bs-dismiss="modal"
+                                            aria-label="Close">
+                                            <span aria-hidden="true"> <i class="fa fa-times"></i></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="product-details-gallery-area mb-7">
+                                            <!-- Start Large Image -->
+                                            <div
+                                                class="product-large-image modal-product-image-large swiper-container">
+                                                <div class="swiper-wrapper">
+                                                    <div class="product-image-large-image swiper-slide img-responsive">
+                                                        <img src="images/product/default/home-1/baju1.webp"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="product-image-large-image swiper-slide img-responsive">
+                                                        <img src="images/product/default/home-1/baju2.jpg"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="product-image-large-image swiper-slide img-responsive">
+                                                        <img src="images/product/default/home-1/baju3.webp"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="product-image-large-image swiper-slide img-responsive">
+                                                        <img src="images/product/default/home-1/baju4.webp"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="product-image-large-image swiper-slide img-responsive">
+                                                        <img src="images/product/default/home-1/celana1.jpg"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="product-image-large-image swiper-slide img-responsive">
+                                                        <img src="images/product/default/home-1/celana2.jpeg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Large Image -->
+                                            <!-- Start Thumbnail Image -->
+                                            <div
+                                                class="product-image-thumb modal-product-image-thumb swiper-container pos-relative mt-5">
+                                                <div class="swiper-wrapper">
+                                                    <div class="product-image-thumb-single swiper-slide">
+                                                        <img class="img-fluid"
+                                                            src="images/product/default/home-1/baju1.webp"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="product-image-thumb-single swiper-slide">
+                                                        <img class="img-fluid"
+                                                            src="images/product/default/home-1/baju2.jpg"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="product-image-thumb-single swiper-slide">
+                                                        <img class="img-fluid"
+                                                            src="images/product/default/home-1/baju3.webp"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="product-image-thumb-single swiper-slide">
+                                                        <img class="img-fluid"
+                                                            src="images/product/default/home-1/baju4.webp"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="product-image-thumb-single swiper-slide">
+                                                        <img class="img-fluid"
+                                                            src="images/product/default/home-1/celana1.jpg"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="product-image-thumb-single swiper-slide">
+                                                        <img class="img-fluid"
+                                                            src="images/product/default/home-1/celana2.jpeg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                                <!-- Add Arrows -->
+                                                <div class="gallery-thumb-arrow swiper-button-next"></div>
+                                                <div class="gallery-thumb-arrow swiper-button-prev"></div>
+                                            </div>
+                                            <!-- End Thumbnail Image -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="modal-product-details-content-area">
+                                            <!-- Start  Product Details Text Area-->
+                                            <div class="product-details-text">
+                                                <h4 class="title">Cheap Clothes</h4>
+                                                <div class="price">Rp. 5</div>
+                                            </div> <!-- End  Product Details Text Area-->
+                                            <!-- Start Product Variable Area -->
+                                            <div class="product-details-variable">
+                                                <!-- Product Variable Single Item -->
 
-    <!-- Main JS -->
-    <script src="js/main.js"></script>
+                                                <!-- Product Variable Single Item -->
+                                                <div class="d-flex align-items-center flex-wrap">
+
+                                                    <div class="product-add-to-cart-btn">
+                                                        <a href="#" data-bs-toggle="modal"
+                                                            data-bs-target="#modalAddcart">Add To Cart</a>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- End Product Variable Area -->
+                                            <div class="modal-product-about-text">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+                                                    iste
+                                                    laborum ad impedit pariatur esse optio tempora sint ullam autem
+                                                    deleniti nam
+                                                    in quos qui nemo ipsum numquam, reiciendis maiores quidem aperiam,
+                                                    rerum vel
+                                                    recusandae</p>
+                                            </div>
+                                            <!-- Start  Product Details Social Area-->
+                                            <div class="modal-product-details-social">
+                                                <span class="title">Share Products</span>
+                                                <ul>
+                                                    <li><a href="#" class="facebook"><i
+                                                                class="fa fa-facebook"></i></a></li>
+                                                    <li><a href="#" class="twitter"><i
+                                                                class="fa fa-twitter"></i></a></li>
+                                                    <li><a href="#" class="pinterest"><i
+                                                                class="fa fa-pinterest"></i></a></li>
+                                                    <li><a href="#" class="google-plus"><i
+                                                                class="fa fa-google-plus"></i></a>
+                                                    </li>
+                                                    <li><a href="#" class="linkedin"><i
+                                                                class="fa fa-linkedin"></i></a></li>
+                                                </ul>
+
+                                            </div> <!-- End  Product Details Social Area-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Modal Quickview cart -->
+
+            <script src="js/vendor/vendor.min.js"></script>
+            <script src="js/plugins/plugins.min.js"></script>
+
+            <!-- Main JS -->
+            <script src="js/main.js"></script>
 </body>
 
 

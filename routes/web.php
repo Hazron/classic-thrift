@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SessionController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -57,3 +58,8 @@ Route::get('/wishlist', function () {
 Route::get('/regis', function () {
     return view('regis');
 });
+
+
+
+Route::get('/sesi/login',[SessionController::class, 'indexlogin'])->name('indexlogin');
+Route::get('/sesi/regis', [SessionController::class, 'indexregis'])->name(('indexregis'));

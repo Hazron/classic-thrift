@@ -10,10 +10,10 @@
     <title>ClassicThrift</title>
 
     <!-- ::::::::::::::Favicon icon::::::::::::::-->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/png">
-    <link rel="stylesheet" href="css/vendor/vendor.min.css">
-    <link rel="stylesheet" href="css/plugins/plugins.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="{{asset('images/favicon.ico')}}" type="image/png">
+    <link rel="stylesheet" href="{{asset('css/vendor/vendor.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/plugins/plugins.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/style.min.css')}}">
 
 </head>
 
@@ -413,7 +413,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h3 class="breadcrumb-title">Login</h3>
+                        <h3 class="breadcrumb-title">Registrasi</h3>
                         <div class="breadcrumb-nav breadcrumb-nav-color--black breadcrumb-nav-hover-color--golden">
                             <nav aria-label="breadcrumb">
                                
@@ -428,13 +428,16 @@
     <!-- ...:::: Start Customer Login Section :::... -->
     <div class="customer-login">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6">
-                    <div class="account_form" data-aos="fade-up" data-aos-delay="0">
-                        <h3 class="text-center">Login</h3>
-                        <form action="#" method="POST">
+            <div class="row">
+                    
+
+                <!--register area start-->
+                <div class="col-lg-6 col-md-6">
+                    <div class="account_form register" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Register</h3>
+                        <form action="login">
                             <div class="default-form-box">
-                                <label>Email <span>*</span></label>
+                                <label>Email address <span>*</span></label>
                                 <input type="text">
                             </div>
                             <div class="default-form-box">
@@ -442,19 +445,16 @@
                                 <input type="password">
                             </div>
                             <div class="login_submit">
-                                <button class="btn btn-md btn-black-default-hover mb-4" type="submit">login</button>
-                                <label class="checkbox-default mb-4" for="offer">
-                                    <input type="checkbox" id="offer">
-                                    <span>Remember me</span>
-                                </label>
-                                <a href="#">Lost your password?</a>
+                                <button class="btn btn-md btn-black-default-hover" type="submit">Register</button>
                             </div>
                         </form>
                     </div>
                 </div>
+                <!--register area end-->
             </div>
         </div>
     </div> <!-- ...:::: End Customer Login Section :::... -->
+
     <!-- Start Footer Section -->
     <footer class="footer-section footer-bg">
         <div class="footer-wrapper">
@@ -742,11 +742,11 @@
         </div>
     </div> <!-- End Modal Quickview cart -->
 
-    <script src="js/vendor/vendor.min.js"></script>
-    <script src="js/plugins/plugins.min.js"></script>
+    <script src="{{asset('js/vendor/vendor.min.js')}}"></script>
+    <script src="{{asset('js/plugins/plugins.min.js')}}"></script>
 
     <!-- Main JS -->
-    <script src="js/main.js"></script>
+    <script src="{{asset('js/main.js')}}"></script>
 </body>
 
 

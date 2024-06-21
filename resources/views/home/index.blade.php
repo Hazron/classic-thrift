@@ -20,11 +20,12 @@
                         <li class="offcanvas-wishlist-item-single">
                             <div class="offcanvas-wishlist-item-block">
                                 <a href="#" class="offcanvas-wishlist-item-image-link">
-                                    <img src="{{ asset($wishlist->produk->foto) }}" alt="{{ $wishlist->produk->nama_produk }}"
-                                        class="offcanvas-wishlist-image">
+                                    <img src="{{ asset($wishlist->produk->foto) }}"
+                                        alt="{{ $wishlist->produk->nama_produk }}" class="offcanvas-wishlist-image">
                                 </a>
                                 <div class="offcanvas-wishlist-item-content">
-                                    <a href="#" class="offcanvas-wishlist-item-link">{{ $wishlist->produk->nama_produk }}</a>
+                                    <a href="#"
+                                        class="offcanvas-wishlist-item-link">{{ $wishlist->produk->nama_produk }}</a>
                                     <div class="offcanvas-wishlist-item-details">
                                         <span class="offcanvas-wishlist-item-details-price">Rp.
                                             {{ number_format($wishlist->produk->harga, 0, ',', '.') }}</span>
@@ -191,8 +192,8 @@
                                         <div class="product-default-single-item product-color--golden swiper-slide">
                                             <div class="image-box">
                                                 <a href="/product-details-default" class="image-link">
-                                                    <img src="{{ asset($produk->foto) }}" loading="lazy" alt="" width="640"
-                                                        height="640">
+                                                    <img src="{{ asset($produk->foto) }}" loading="lazy"
+                                                        alt="" width="640" height="640">
                                                 </a>
                                                 <div class="action-link">
                                                     <div class="action-link-left">

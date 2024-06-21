@@ -147,7 +147,8 @@
                                         <li> <strong><i class="icon-shopping-cart"></i> 1 Items in Your Cart
                                                 .</strong></li>
                                         <li> <strong>TOTAL PRICE: </strong> <span>Rp. 5</span></li>
-                                        <li class="modal-continue-button"><a href="#" data-bs-dismiss="modal">Continue
+                                        <li class="modal-continue-button"><a href="#"
+                                                data-bs-dismiss="modal">Continue
                                                 Shopping
                                             </a></li>
                                     </ul>
@@ -165,15 +166,12 @@
 
         <script src="{{ asset('js/vendor/vendor.min.js') }}"></script>
         <script src="{{ asset('js/plugins/plugins.min.js') }}"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></script>
         <!-- Main JS -->
         <script src="{{ asset('js/main.js') }}"></script>
-
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
-            $(document).ready(function () {
+            $(document).ready(function() {
                 // Wishlist functionality
-                $('.add-to-wishlist').on('click', function (e) {
+                $('.add-to-wishlist').on('click', function(e) {
                     e.preventDefault();
                     var $icon = $(this).find('i');
                     var produkId = $(this).data('produk-id');
@@ -186,7 +184,7 @@
                             _token: '{{ csrf_token() }}',
                             produk_id: produkId
                         },
-                        success: function (response) {
+                        success: function(response) {
                             if (response.status === 'success') {
                                 if (isAdded) {
                                     $icon.removeClass('fa-solid fa-heart').addClass('icon-heart');
@@ -199,32 +197,35 @@
                                 alert(response.message);
                             }
                         },
-                        error: function () {
+                        error: function() {
                             alert('You must be logged in to manage your wishlist.');
                         }
                     });
                 });
 
                 // Cart functionality
-                $('.add-to-cart').on('click', function (e) {
+                $('.add-to-cart').on('click', function(e) {
                     e.preventDefault();
                     var $icon = $(this).find('i');
                     var produkId = $(this).data('produk-id');
                     var isAdded = $icon.hasClass('fa-solid');
 
                     $.ajax({
-                        url: isAdded ? '{{ route('cart.remove', '') }}/' + produkId : '{{ route('cart.add') }}',
+                        url: isAdded ? '{{ route('cart.remove', '') }}/' + produkId :
+                            '{{ route('cart.add') }}',
                         method: isAdded ? 'DELETE' : 'POST',
                         data: {
                             _token: '{{ csrf_token() }}',
                             produk_id: produkId
                         },
-                        success: function (response) {
+                        success: function(response) {
                             if (response.status === 'success') {
                                 if (isAdded) {
-                                    $icon.removeClass('fa-solid fa-shopping-cart').addClass('icon-bag');
+                                    $icon.removeClass('fa-solid fa-shopping-cart').addClass(
+                                        'icon-bag');
                                 } else {
-                                    $icon.removeClass('icon-bag').addClass('fa-solid fa-shopping-cart');
+                                    $icon.removeClass('icon-bag').addClass(
+                                        'fa-solid fa-shopping-cart');
                                 }
                                 location.reload();
                                 updateCartCount();
@@ -232,7 +233,7 @@
                                 alert(response.message);
                             }
                         },
-                        error: function () {
+                        error: function() {
                             alert('You must be logged in .');
                         }
                     });
@@ -242,7 +243,7 @@
                     $.ajax({
                         url: '/wishlist/count',
                         method: 'GET',
-                        success: function (response) {
+                        success: function(response) {
                             $('.item-count').text(response.count);
                         }
                     });
@@ -252,25 +253,25 @@
                     $.ajax({
                         url: '/cart/count',
                         method: 'GET',
-                        success: function (response) {
+                        success: function(response) {
                             $('.item-count-keranjang').text(response.count);
                         }
                     });
                 }
 
-                window.deleteWishlistItem = function (wishlistId) {
+                window.deleteWishlistItem = function(wishlistId) {
                     if (!confirm('Apakah Anda yakin ingin menghapus item ini dari wishlist?')) {
                         return;
                     }
 
                     fetch(`/wishlist/delete/${wishlistId}`, {
-                        method: 'DELETE',
-                        headers: {
-                            'X-CSRF-TOKEN': '{{ csrf_token() }}',
-                            'Content-Type': 'application/json'
-                        },
-                        credentials: 'same-origin',
-                    })
+                            method: 'DELETE',
+                            headers: {
+                                'X-CSRF-TOKEN': '{{ csrf_token() }}',
+                                'Content-Type': 'application/json'
+                            },
+                            credentials: 'same-origin',
+                        })
                         .then(response => response.json())
                         .then(data => {
                             if (data.status === 'success') {
@@ -287,11 +288,10 @@
                         });
                 }
             });
-
         </script>
         <script>
-            $(document).ready(function () {
-                $('.add-to-wishlist').on('click', function (e) {
+            $(document).ready(function() {
+                $('.add-to-wishlist').on('click', function(e) {
                     e.preventDefault();
 
                     var $icon = $(this).find('i');
@@ -299,13 +299,14 @@
                     var isAdded = $icon.hasClass('fa-solid');
 
                     $.ajax({
-                        url: isAdded ? '{{ route('wishlist.remove') }}' : '{{ route('wishlist.add') }}',
+                        url: isAdded ? '{{ route('wishlist.remove') }}' :
+                            '{{ route('wishlist.add') }}',
                         method: 'POST',
                         data: {
                             _token: '{{ csrf_token() }}',
                             produk_id: produkId
                         },
-                        success: function (response) {
+                        success: function(response) {
                             if (response.status === 'success') {
                                 if (isAdded) {
                                     $icon.removeClass('fa-solid fa-heart').addClass('icon-heart');
@@ -319,7 +320,7 @@
                                 alert(response.message);
                             }
                         },
-                        error: function () {
+                        error: function() {
                             alert('You must be logged in to manage your wishlist.');
                         }
                     });
@@ -329,14 +330,13 @@
                     $.ajax({
                         url: '/wishlist/count',
                         method: 'GET',
-                        success: function (response) {
+                        success: function(response) {
                             $('.item-count').text(response.count);
                         }
                     });
                 }
             });
-        </body >
+        </script>
+        </body>
 
-
-
-        </html >
+        </html>

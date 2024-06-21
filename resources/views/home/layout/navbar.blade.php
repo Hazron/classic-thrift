@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="{{ asset('css/vendor/vendor.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/plugins/plugins.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.min.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+
 
 </head>
 
@@ -54,10 +55,10 @@
                                         </li>
                                         <li>
                                             @guest
-                                                <li><a href="/sesi/login">Login</a></li>
-                                            @else
-                                                <li><a href="/dashboard">{{ Auth::user()->name }}</a></li>
-                                            @endguest
+                                            <li><a href="/sesi/login">Login</a></li>
+                                        @else
+                                            <li><a href="/dashboard">{{ Auth::user()->name }}</a></li>
+                                        @endguest
                                     </ul>
                                 </nav>
                             </div>
